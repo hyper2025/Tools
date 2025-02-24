@@ -7,6 +7,8 @@
     <meta name="keywords" content="online tools, image tools, PDF tools, compress images, convert PDFs">
     <meta name="author" content="Your Name">
     <title>Online Tools - Free Image & PDF Tools</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Styles */
         body {
@@ -96,6 +98,8 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 20px;
         }
 
         .tool-card:hover {
@@ -103,21 +107,21 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .tool-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
+        .tool-card .icon {
+            font-size: 3rem;
+            color: #007BFF;
+            margin-bottom: 15px;
         }
 
         .tool-card h3 {
             font-size: 1.25rem;
-            margin: 15px 20px 10px;
+            margin: 0 0 10px;
         }
 
         .tool-card p {
             font-size: 0.9rem;
             color: #555;
-            margin: 0 20px 20px;
+            margin: 0;
         }
 
         /* Footer */
@@ -190,36 +194,47 @@
 
     <!-- Tools Grid -->
     <section class="tools-grid">
-        <div class="tool-card">
-            <img src="https://source.unsplash.com/300x150/?compress,image" alt="Image Compressor">
+        <!-- Image Compressor -->
+        <a href="image-compressor.html" class="tool-card">
+            <div class="icon"><i class="fas fa-compress"></i></div>
             <h3>Image Compressor</h3>
             <p>Compress your images without losing quality. Perfect for web use.</p>
-        </div>
-        <div class="tool-card">
-            <img src="https://source.unsplash.com/300x150/?pdf,convert" alt="PDF Converter">
+        </a>
+
+        <!-- PDF Converter -->
+        <a href="pdf-converter.html" class="tool-card">
+            <div class="icon"><i class="fas fa-file-pdf"></i></div>
             <h3>PDF Converter</h3>
             <p>Convert PDFs to Word, Excel, or other formats effortlessly.</p>
-        </div>
-        <div class="tool-card">
-            <img src="https://source.unsplash.com/300x150/?resize,image" alt="Image Resizer">
+        </a>
+
+        <!-- Image Resizer -->
+        <a href="image-resizer.html" class="tool-card">
+            <div class="icon"><i class="fas fa-expand"></i></div>
             <h3>Image Resizer</h3>
             <p>Resize images to your desired dimensions quickly.</p>
-        </div>
-        <div class="tool-card">
-            <img src="https://source.unsplash.com/300x150/?merge,pdf" alt="PDF Merger">
+        </a>
+
+        <!-- PDF Merger -->
+        <a href="pdf-merger.html" class="tool-card">
+            <div class="icon"><i class="fas fa-file-merge"></i></div>
             <h3>PDF Merger</h3>
             <p>Merge multiple PDFs into a single document with ease.</p>
-        </div>
-        <div class="tool-card">
-            <img src="https://source.unsplash.com/300x150/?image,pdf" alt="Image to PDF">
+        </a>
+
+        <!-- Image to PDF -->
+        <a href="image-to-pdf.html" class="tool-card">
+            <div class="icon"><i class="fas fa-image"></i></div>
             <h3>Image to PDF</h3>
             <p>Convert images to PDF format in just a few clicks.</p>
-        </div>
-        <div class="tool-card">
-            <img src="https://source.unsplash.com/300x150/?split,pdf" alt="PDF Splitter">
+        </a>
+
+        <!-- PDF Splitter -->
+        <a href="pdf-splitter.html" class="tool-card">
+            <div class="icon"><i class="fas fa-file-split"></i></div>
             <h3>PDF Splitter</h3>
             <p>Split PDFs into individual pages or sections.</p>
-        </div>
+        </a>
     </section>
 
     <!-- Footer -->
